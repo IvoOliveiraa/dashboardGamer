@@ -33,14 +33,14 @@ header{
     display: flex;
     flex-direction: column;
     border: 1px solid var(--backgroud2);
-    width: 60px;
+    width: 260px;
     overflow-y: hidden;
     transition: 0.5s;
 }
 
-header:hover{
-    width: 200px;
-}
+/*header:hover{
+    width: 260px;
+}*/
 
 .hbg {
     display: none;
@@ -135,14 +135,14 @@ header #social .titulo-social h3{
 
 #social .friends .online .bi{
     color: var(--font);
-    margin: 0 5px;
+    margin: 0 7px;
 }
 
 #social .friends .online h3{
     font-size: 11px;
     color: var(--font);
-    padding: 5px 0;
-    margin: 0 5px;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 
 #social .friends .online .circle{
@@ -150,7 +150,7 @@ header #social .titulo-social h3{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 0 3px;
+    margin: 0 5px;
 }
 
 #social .friends .online p{
@@ -172,6 +172,7 @@ header #social .player img{
 
 header #social .player p{
     color: var(--font);
+    white-space: nowrap;
 }
 
 header #social .player .status-on{
@@ -235,36 +236,21 @@ main .principal {
 }
 
 main .principal .slide{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--backgroud2);
-    max-width: 700px;
+    width: 600px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
     margin: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main .principal .logo-valorant{
-    width: 230px;
-    padding: 20px 35px;
-}
-
-main .principal .img-valorant{
-    width: 518px;
-    position: absolute;
-    top: 0;
-    right: 0
-}
-
-main .principal .slide p{
-    font-size: 13px;
-    color: var(--font);
-    padding: 0 35px;
+main .principal .slide .img-valorant{
+   position: absolute;
+   width: 100%; 
 }
 
 
@@ -277,8 +263,10 @@ main .principal .slide .btn{
     cursor: pointer;
     transition: 0.5s;
     margin: 20px;
-    padding: 0 35px;
+    padding: 5px 35px;
     max-width: 60%;
+    position: absolute;
+    bottom: 0;
 }
 
 main .principal .slide .btn:hover{
@@ -486,7 +474,8 @@ main .library {
 
 main .library .showMore{
     width: 80%;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 main .library .showMore h1{
