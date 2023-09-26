@@ -1,0 +1,133 @@
+/* Começo  conteudo store */
+main .store{
+    margin: 30px 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .showMore{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+main .showMore a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .showMore a:hover{
+    color: var(--hover);
+}
+ 
+main .showMore a .bi{
+    font-size: 15px;
+}
+
+main .store h1{
+    margin: 30px 0;
+    color: var(--font);
+    font-size: 20px;
+}
+
+main .store .played{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main .store .slide-store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroud2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+    margin: auto;
+}
+
+main .store .slide-store img{
+    border-radius: 20px;
+    width: 230px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0 ;
+}
+
+main .store .slide-store .name-game{
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+main .store .slide-store .name-game h3{
+    font-size: 14px;
+    color: var(--font);
+    margin: 3px 20px;
+    width: 80%;
+}
+
+main .store .slide-store .name-game p{
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--font);
+    margin: 0 20px;
+    width: 80%;
+}
+
+main .store .slide-store .price{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   color: var(--font);
+}
+
+main .store .slide-store .price p{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main .store .slide-store .star{
+    color: goldenrod;
+    margin: 7px 0;
+}
+
+main .store .slide-store .price i{
+    font-size: 14px;
+}
+
+main .store .slide-store .price .bi-heart{
+    margin: 0 10px;
+}
+
+main .store .slide-store .buy{
+    margin: auto;
+    margin: 20px 0;
+    font-size: 13px;
+    padding: 2px 25px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    color: var(--backgroud);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .store .slide-store .buy:hover{
+    color: var(--font);
+}
+/* Fim do conteudo-store */
