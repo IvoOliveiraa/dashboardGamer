@@ -33,13 +33,13 @@ header{
     display: flex;
     flex-direction: column;
     border: 1px solid var(--backgroud2);
-    width: 260px;
+    width: 270px;
     overflow-y: hidden;
     transition: 0.5s;
 }
 
 /*header:hover{
-    width: 260px;
+    width: 270px;
 }*/
 
 .hbg {
@@ -231,7 +231,7 @@ main{
 main .principal {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 100px;
 }
 
@@ -242,13 +242,12 @@ main .principal .slide{
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
-    margin: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .principal .slide .img-valorant{
+main .principal .slide .img-riot{
    position: absolute;
    width: 100%; 
 }
