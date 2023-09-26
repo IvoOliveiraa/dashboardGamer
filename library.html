@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Gamer</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/library.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="hbg">
+            <a onclick="clickMenu()"><i class="bi bi-list"></i></a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt"> Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="library.html">
+                        <span class="icon"><i class="bi bi-controller"></i></span>
+                        <span class="txt"> Library</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="store.html">
+                        <span class="icon"><i class="bi bi-bag-fill"></i></span>
+                        <span class="txt"> Store</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="social.html">
+                        <span class="icon"><i class="bi bi-chat-dots-fill"></i></span>
+                        <span class="txt"> Social</span>
+                    </a>
+                </li> 
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="conteudo-principal">
+            <div class="conteudo">
+                <div class="store">
+                    <div class="category">
+                        <h1>My library</h1> 
+                    </div>
+
+                    <div class="pag">
+                        <h4>Pag:</h4>
+                        <p class="one" onclick="clickPlay1()">1</p>
+                        <p onclick="clickPlay2()">2</p>
+                    </div>
+
+                    <div class="play" id="play1">
+                        <div class="mygames">
+                            <img src="img/gta.jpg" alt="imagem do jogo gta 5">
+                            <h3>Grand theft auto v</h3>
+                            <h5>Action</h5>
+                            <div class="btn">                             
+                                <a>instaled</a>
+                            </div>
+                        </div>
+    
+                        <div class="mygames">
+                            <img src="img/lol.jpg" alt="imagem do lol">
+                            <h3>League of legends</h3>
+                            <h5>strategy</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+    
+                        <div class="mygames">
+                            <img src="img/valorant-bg.webp" alt="imagem do jogo valorant">
+                            <h3>Valorant</h3>
+                            <h5>strategy</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="mygames">
+                            <img src="img/tft.jpg" alt="imagem do jogo tft">
+                            <h3>Teamfight tactics</h3>
+                            <h5>strategy</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="mygames">
+                            <img src="img/mk1.webp" alt="imagem do jogo mk 1">
+                            <h3>Mortal kombat 1</h3>
+                            <h5>fight</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+
+                        <div class="mygames">
+                            <img src="img/mkxl.jpeg" alt="imagem do jogo mk XL">
+                            <h3>Mortal kombat XL</h3>
+                            <h5>fight</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="play" id="play2">
+                        <div class="mygames">
+                            <img src="img/mkx.jpg" alt="imagem do jogo mk X">
+                            <h3>Mortak kombat X</h3>
+                            <h5>fight</h5>
+                            <div class="btn">                             
+                                <a>instaled</a>
+                            </div>
+                        </div>
+    
+                        <div class="mygames">
+                            <img src="img/apex.webp" alt="imagem do jogo apex">
+                            <h3>Apex legends</h3>
+                            <h5>Action</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+    
+                        <div class="mygames">
+                            <img src="img/fnt.webp" alt="imagem do jogo fortnite">
+                            <h3>Fortnite</h3>
+                            <h5>Action</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="mygames">
+                            <img src="img/cs2.webp" alt="imagem do jogo cs2">
+                            <h3>Counter strike 2</h3>
+                            <h5>Action</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="mygames">
+                            <img src="img/cyb.jpg" alt="imagem do jogo cyberpunk">
+                            <h3>Cyberpunk 2077</h3>
+                            <h5>Action</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+
+                        <div class="mygames">
+                            <img src="img/hl.jpg" alt="imagem do jogo hogwarts legacy">
+                            <h3>Hogwarts Legacy</h3>
+                            <h5>RPG Action</h5>
+                            <div class="btn">
+                                <a>instaled</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="topGames">
+                        <span>
+                            <h1>Top Games</h1>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+  
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
