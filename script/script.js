@@ -37,17 +37,22 @@ function carregaResultado(response) {
 
 
 //lista de games
-function toggleMenu(toShow,toHidden){
+function toggleMenu(toShow,toShow2,toHidden){
     toShow.style.display = 'none';
-    toHidden.style.display = 'flex';
+    toShow2.style.display = 'none';
+    toHidden.style.display = 'grid';
 }
 
 function clickPlay1(){
-    toggleMenu(play2,play1)
+    toggleMenu(play2,play3,play1)
 }   
 
 function clickPlay2(){
-    toggleMenu(play1,play2)
+    toggleMenu(play1,play3,play2)
+}
+
+function clickPlay3(){
+    toggleMenu(play1,play2,play3)
 }
 
 
