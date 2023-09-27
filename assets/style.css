@@ -68,10 +68,6 @@ header{
     margin-top: 40px;
 }
 
-#menu > ul .pg-social{
-    display: none;
-}
-
 #menu > ul> li> a{
     margin: 30px 10px;
     color: var(--font);
