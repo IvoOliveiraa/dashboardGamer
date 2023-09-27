@@ -60,10 +60,10 @@ function clickPlay3(){
 
 //Social
 function clickMenu(element){
-    if(element.style.display === 'grid'){
-        element.style.display = 'none'
+    if(element.style.display === 'none'){
+        element.style.display = 'grid'
     }else{
-        element.style.display ='grid'
+        element.style.display ='none'
     }  
 }
 
