@@ -5,6 +5,7 @@ main{
 
 .conteudo-principal .conteudo{
     margin-top: 50px;
+    height: 100vh;
 }
 
 .conteudo-principal .play{
