@@ -10,19 +10,16 @@ main .store{
 
 main .showMore{
     display: flex;
-    justify-content: space-between;
     width: 80%;
     margin: auto;
+    justify-content: left;
 }
 
 main .showMore a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--font);
-    font-size: 13px;
     cursor: pointer;
     transition: 0.5s;
+    margin: 0 10px;
 }
 
 main .showMore a:hover{
@@ -30,7 +27,7 @@ main .showMore a:hover{
 }
  
 main .showMore a .bi{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 main .store h1{
