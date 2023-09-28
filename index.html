@@ -14,55 +14,64 @@
         </div>
 
         <nav id="menu">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <span class="icon"><i class="bi bi-house"></i></span>
-                        <span class="txt"> Home</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="library.html">
-                        <span class="icon"><i class="bi bi-controller"></i></span>
-                        <span class="txt"> Library</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="store.html">
-                        <span class="icon"><i class="bi bi-bag-fill"></i></span>
-                        <span class="txt"> Store</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a class="pg-social" href="social.html">
-                        <span class="icon"><i class="bi bi-chat-dots-fill"></i></span>
-                        <span class="txt"> Social</span>
-                    </a>
-                </li> 
-            </ul>
+            <a href="index.html">
+                <span class="icon"><i class="bi bi-house"></i></span>
+                <span class="txt"> Home</span>
+            </a>
+                <a href="library.html">
+                <span class="icon"><i class="bi bi-controller"></i></span>
+                <span class="txt"> Library</span>
+            </a>
+                <a href="store.html">
+                <span class="icon"><i class="bi bi-bag-fill"></i></span>
+                <span class="txt"> Store</span>
+            </a>
+                <a class="pg-social" href="social.html">
+                <span class="icon"><i class="bi bi-chat-dots-fill"></i></span>
+                <span class="txt"> Social</span>
+            </a>
         </nav>
     </header>
     
     <main>
-        <section class="principal">
+        <section class="slider">
+            
+            <div class="list">
+                <div class="item">
+                    <img src="img-slide/Mortal-Kombat-bg.jpeg" alt="" class="bg-slide" >
+                    <img src="img-slide/liu-kang.webp" alt="" class="lui-mk" >
+                    <img src="img-slide/sigil.webp" alt="" class="logo-slide" >
+                    <img src="img-slide/mk1-logo-tm.webp" alt="" class="txt-slide">
 
-            <div class="slide">
-                <img src="img/games-free.jpg" alt="img games da riot" class="img-riot">
-                <a href="mk-lol.html" class="btn">See more</a>
-            </div>
-
-            <div class="shop">
-                <img src="img/mk1.webp" alt="jogo mortal kombat 1">
-                <h3>Mortal kombat 1</h3>
-                <h5>Action Fighting</h5>
-                <div class="btn">
-                    <p>2023</p>
-                    <a href="mk-lol.html">See more</a>
+                    <a href="store.html" class="btn">See more</a>
                 </div>
+                <div class="item">
+                    <img src="img-slide/valorant.jpg" alt="" class="bg-slide" >
+                    <img src="img-slide/logo-vl.png" alt="" class="logo-slide2" >
+                    <img src="img-slide/txt-vl.png" alt="" class="txt-slide2">
+
+                    <a href="store.html" class="btn2">See more</a>
+                </div>
+
+                <div class="item">
+                    <img src="img-slide/hog.jpg" alt="" class="bg-slide" >
+                
+                    <a href="store.html" class="btn3">See more</a>
+                </div>
+
             </div>
+
+            <div class="buttons">
+                <button id="prev"><i class="bi bi-chevron-left"></i></button>
+                <button id="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+           
         </section>
 
         <section class="store">
@@ -73,74 +82,98 @@
             
             <div class="played">
                 <div class="slide-store">
-                    <img src="img/gta.jpg" alt="imagem do jogo gta">
+                    <img src="img-games/gta5.png" alt="imagem do jogo gta">
 
                     <div class="name-game">
-                        <h3>R$: 64,20</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Grand Theft Auto V</p>
+                        <div class="btn">
+                            <h3>R$: 64,20</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/lol.jpg" alt="imagem do jogo lol">
+                    <img src="img-games/mkxl.jpg" alt="imagem do jogo mortal kombat xl">
 
                     <div class="name-game">
-                        <h3>Free</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Mortal kombat XL</p>
+                        <div class="btn">
+                            <h3>R$: 223,20</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/valorant-bg.webp" alt="imagem do valorant">
+                    <img src="img-games/valorant.jpg" alt="imagem do valorant">
 
                     <div class="name-game">
-                        <h3>Free</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Valorant</p>
+                        <div class="btn">
+                            <h3>Free</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/cs2.webp" alt="imagem do jogo cs2">
+                    <img src="img-games/fg.jpg" alt="imagem do jogo fall guys">
 
                     <div class="name-game">
-                        <h3>Free</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Fall guys</p>
+                        <div class="btn">
+                            <h3>Free</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/tft.jpg" alt="imagem do jogo tft">
+                    <img src="img-games/rlg.png" alt="imagem do jogo rocket league">
 
                     <div class="name-game">
-                        <h3>Free</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Rocket league</p>
+                        <div class="btn">
+                            <h3>Free</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/Among.jpg" alt="imagem do jogo among-us">
+                    <img src="img-games/amoung.jpg" alt="imagem do jogo among-us">
 
                     <div class="name-game">
-                        <h3>R$: 10,00</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Among Us</p>
+                        <div class="btn">
+                            <h3>R$: 10,00</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/apex.webp" alt="imagem do jogo apex">
+                    <img src="img-games/apex.jpeg" alt="imagem do jogo apex">
 
                     <div class="name-game">
-                        <h3>Free</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Apex Legends</p>
+                        <div class="btn">
+                            <h3>Free</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-store">
-                    <img src="img/fnt.webp" alt="imagem do jogo fortnite">
+                    <img src="img-games/fnt.jpg" alt="imagem do jogo fortnite">
 
                     <div class="name-game">
-                        <h3>Free</h3>
-                        <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        <p>Fortnite</p>
+                        <div class="btn">
+                            <h3>Free</h3>
+                            <a href="store.html" class="buy"><i class="bi bi-cart-plus"></i></a>  
+                        </div>
                     </div>
                 </div>
                 
