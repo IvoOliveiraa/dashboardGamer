@@ -39,7 +39,7 @@ main .showMore a .bi{
 }
 
 .pag p{
-    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    background: var(--hover2);
     margin: 0 3px;
     padding: 0 4px;
     border-radius: 3px;
@@ -121,8 +121,8 @@ main .showMore a .bi{
 }
 
 .mygames a{
-    border: 1px solid rgb(255, 51, 66);
-    color: rgb(255, 51, 66);
+    border: 1px solid var(--hover);
+    color: var(--hover);
     font-size: 13px;
     padding: 3px 10px;
     border-radius: 7px;

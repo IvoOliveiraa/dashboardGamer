@@ -88,10 +88,10 @@ dots.forEach((li, key) =>{
 
 
 //lista de games
-function toggleMenu(toShow,toShow2,toHidden){
-    toShow.style.display = 'none';
-    toShow2.style.display = 'none';
-    toHidden.style.display = 'grid';
+function toggleMenu(toHidden,toHidde2,toShow){
+    toHidden.style.display = 'none';
+    toHidde2.style.display = 'none';
+    toShow.style.display = 'grid';
 }
 
 function clickPlay1(){
@@ -132,13 +132,58 @@ function clickGroup(){
 
 
 
+/*lita do store*/
+function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
+    toShow.style.display = 'flex';
+    toHidden.style.display = 'none';
+    toHidden2.style.display = 'none';
+    toHidden3.style.display = 'none';
+    toHidden4.style.display = 'none';
+    toHidden5.style.display = 'none';
+}
+
+function clickTopGames(){
+    toggleGames(topGames,topNews,topPromotion,topFree1,topFree2,pag1)
+}
+
+function clickTopNews(){
+    toggleGames(topNews,topGames,topPromotion,topFree1,topFree2,pag1)
+}
+
+function clickTopPromotion(){
+    toggleGames(topPromotion,topGames,topNews,topFree1,topFree2,pag1)
+}
 
 
-//exemplo
-/*function clickSocial(){
-    if(social.style.height >= "57%" || social.style.height == "100%"){
-        social.style.height = "18%";
-    }else{
-        social.style.height = "57%"
-    }
-}*/
+/* lista games free*/
+function toggleGames2(toShow,toShow2,toHidden,toHidden2,toHidden3,toHidden4){
+    toShow.style.display = 'flex';
+    toShow2.style.display = 'flex';
+    toHidden.style.display = 'none';
+    toHidden2.style.display = 'none';
+    toHidden3.style.display = 'none';
+    toHidden4.style.display = 'none';
+}
+
+function clickTopFree(){
+    toggleGames2(topFree1,pag1,topGames,topNews,topPromotion,topFree2)
+}
+
+
+
+/* pag*/
+function toggleGames3(toShow,toHidden){
+    toShow.style.display = 'flex';
+    toHidden.style.display = 'none';  
+}
+
+function clicktopFree1(){
+    toggleGames3(topFree1,topFree2)
+}
+
+function clicktopFree2(){
+    toggleGames3(topFree2,topFree1)
+}
+
+
+

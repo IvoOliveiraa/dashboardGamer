@@ -1,5 +1,5 @@
 /* Começo  conteudo store */
-main .store{
+main .my-store{
     margin: 30px 0 auto;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,12 @@ main .showMore{
     width: 80%;
     margin: auto;
     justify-content: left;
+    flex-direction: column;
+}
+
+main .showMore .top-show{
+    display: flex;
+    flex-direction: row;
 }
 
 main .showMore a{
@@ -30,21 +36,47 @@ main .showMore a .bi{
     font-size: 20px;
 }
 
-main .store h1{
+main .my-store h1{
     margin: 30px 0;
     color: var(--font);
     font-size: 20px;
 }
 
-main .store .played{
+
+main .showMore .category{
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+main .showMore .category p{
+    margin: 0 6px;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 7px;
+    color: var(--font);
+    background: var(--hover2);
+    transition: 0.3s;
+}
+
+main .showMore .category p:hover{
+    transform: scale(1.05);
+}
+
+main .my-store .cardsCategory{
+    width: 100%;
+}
+
+main .my-store .played{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 30px;
 }
 
-main .store .slide-store{
+main .my-store .slide-store{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +87,7 @@ main .store .slide-store{
     margin: auto;
 }
 
-main .store .slide-store img{
+main .my-store .slide-store img{
     border-radius: 20px;
     width: 230px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
@@ -63,7 +95,7 @@ main .store .slide-store img{
     border-radius: 10px 10px 0 0 ;
 }
 
-main .store .slide-store .name-game{
+main .my-store .slide-store .name-game{
     width: 100%;
     margin-top: 12px;
     display: flex;
@@ -71,14 +103,14 @@ main .store .slide-store .name-game{
     justify-content: left;
 }
 
-main .store .slide-store .name-game h3{
+main .my-store .slide-store .name-game h3{
     font-size: 14px;
     color: var(--font);
     margin: 3px 20px;
     width: 80%;
 }
 
-main .store .slide-store .name-game p{
+main .my-store .slide-store .name-game p{
     font-size: 10px;
     font-weight: 600;
     color: var(--font);
@@ -86,45 +118,107 @@ main .store .slide-store .name-game p{
     width: 80%;
 }
 
-main .store .slide-store .price{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   width: 100%;
-   color: var(--font);
+main .my-store .slide-store .cart{
+    width: 80%;
+    display: flex;
+    justify-content: right;
 }
 
-main .store .slide-store .price p{
-    font-size: 12px;
+main .my-store .slide-store .cart .bi{
+    color: var(--font);
+    margin: 0 5px;
+}
+
+
+main .my-store .slide-store .price{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
+   color: green;
+}
+
+main .my-store .slide-store .price p{
+    font-size: 15px;
     font-weight: 600;
 }
 
-main .store .slide-store .star{
-    color: goldenrod;
-    margin: 7px 0;
+main .my-store .slide-store .desconto{
+    margin-top: 5px;
 }
 
-main .store .slide-store .price i{
+main .my-store .slide-store .desconto p{
+    background-color: green;
+    padding: 3px;
+    border-radius: 7px;
+    width: 16%;
+}
+
+main .my-store .slide-store .price .price-desconto{
+    text-decoration: line-through;
+    color: red;
+    font-size: 12px;
+}
+
+main .my-store .slide-store .price i{
     font-size: 14px;
 }
 
-main .store .slide-store .price .bi-heart{
+main .my-store .slide-store .price .bi-heart{
     margin: 0 10px;
 }
 
-main .store .slide-store .buy{
+main .my-store .slide-store .buy{
     margin: auto;
     margin: 20px 0;
     font-size: 13px;
     padding: 2px 25px;
     border-radius: 7px;
-    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
-    color: var(--backgroud);
+    background: var(--hover2);
+    color: var(--font);
     cursor: pointer;
     transition: 0.5s;
 }
 
-main .store .slide-store .buy:hover{
-    color: var(--font);
+main .my-store .slide-store .buy:hover{
+    transform: scale(1.04);
 }
+
+
+main .my-store .pag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .my-store .pag h4{
+    color: var(--font);
+    font-size: 12px;
+}
+
+main .my-store .pag .one{
+    padding: 0 6px;
+}
+
+main .my-store .pag p{
+    background: var(--hover2);
+    margin: 0 3px;
+    padding: 0 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+main .my-store .pag p:hover{
+    color: var(--font);
+    transform: scale(1.05);
+}
+
+main .my-store #topNews, #topPromotion, #topFree1,
+#topFree2, #pag1{
+    display: none;
+}
+
 /* Fim do conteudo-store */
