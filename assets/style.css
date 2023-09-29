@@ -551,4 +551,5 @@ main .library .card-lib a{
 main .library .card-lib a:hover{
     color: var(--font);
 }
+
 /* Fim do conteudo-library */

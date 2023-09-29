@@ -67,6 +67,19 @@ main .my-store .cardsCategory{
     width: 100%;
 }
 
+main .my-store .cardsCategory #topList{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .my-store .cardsCategory #topList .slide-store{
+    margin-bottom: 20px;
+}
+
+main .my-store .cardsCategory #pagAll{
+    margin: 20px 0;
+}
+
 main .my-store .played{
     display: flex;
     flex-direction: row;
@@ -216,9 +229,12 @@ main .my-store .pag p:hover{
     transform: scale(1.05);
 }
 
-main .my-store #topNews, #topPromotion, #topFree1,
-#topFree2, #pag1{
+main .my-store #topNews,
+#topPromotion, #topFree1,
+#topFree2, #pag1, #pagAll,
+#topAll{
     display: none;
 }
+
 
 /* Fim do conteudo-store */

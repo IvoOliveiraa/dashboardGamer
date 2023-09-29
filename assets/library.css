@@ -135,7 +135,7 @@ main .showMore a .bi{
     transform: scale(1.04);
 }
 
-#play2, #play3{
+#play2, #play3, #play4{
     display: none;
 }
     

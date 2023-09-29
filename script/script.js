@@ -1,4 +1,4 @@
-//parte da fetch (API)
+//começo - parte da fetch (API)
 document.addEventListener('click', async (e) => {
     const el = e.target;
     const tag = el.tagName.toLowerCase();
@@ -34,11 +34,11 @@ function carregaResultado(response) {
     const resultado = document.querySelector('body');
     resultado.innerHTML = response;
 }
+//começo - parte da fetch (API)
 
 
 
-/*slide principal*/
-
+/*começo - slide principal*/
 let list = document.querySelector('.list');
 let items = document.querySelectorAll('.item');
 let dots = document.querySelectorAll('.dots li');
@@ -83,33 +83,40 @@ dots.forEach((li, key) =>{
         active = key;
         reloadSlider();
     })
-})   
+})
+/*fim - slide principal*/  
 
 
 
-//lista de games
-function toggleMenu(toHidden,toHidde2,toShow){
+/*começo - lista games*/
+function toggleMenu(toHidden,toHidde2,toHidde3,toShow){
     toHidden.style.display = 'none';
     toHidde2.style.display = 'none';
+    toHidde3.style.display = 'none';
     toShow.style.display = 'grid';
 }
 
 function clickPlay1(){
-    toggleMenu(play2,play3,play1)
+    toggleMenu(play2,play3,play4,play1)
 }   
 
 function clickPlay2(){
-    toggleMenu(play1,play3,play2)
+    toggleMenu(play1,play3,play4,play2)
 }
 
 function clickPlay3(){
-    toggleMenu(play1,play2,play3)
+    toggleMenu(play1,play2,play4,play3)
 }
 
+function clickPlay4(){
+    toggleMenu(play1,play2,play3,play4)
+}
+/*fim - lista games*/
 
 
 
-//Social
+
+/*começo - social*/
 function clickMenu(element){
     if(element.style.display === 'none'){
         element.style.display = 'grid'
@@ -129,12 +136,97 @@ function clickOffiline(){
 function clickGroup(){
     clickMenu(group)
 }
+/*fim - social*/
 
 
 
-/*lita do store*/
-function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
+/*começo - lita do store*/
+function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden5,toHidden6,toHidden7,toHidden8){
     toShow.style.display = 'flex';
+    toHidden.style.display = 'none';
+    toHidden2.style.display = 'none';
+    toHidden3.style.display = 'none';
+    toHidden5.style.display = 'none';
+    toHidden6.style.display = 'none';
+    toHidden7.style.display = 'none';
+    toHidden8.style.display = 'none';
+}
+
+function clickTopGames(){
+    toggleGames(topGames,topNews,topPromotion,topFree1,topFree2,pagAll,topAll,topList)
+}
+
+function clickTopNews(){
+    toggleGames(topNews,topGames,topPromotion,topFree1,topFree2,pagAll,topAll,topList)
+}
+
+function clickTopPromotion(){
+    toggleGames(topPromotion,topGames,topNews,topFree1,topFree2,pagAll,topAll,topList)
+}
+/*fim - lita do store*/
+
+
+
+
+
+
+/* começo - lista games free | pag-All*/
+function toggleGames2(toShow,toShow2,toHidden,toHidden2,toHidden3,toHidden4,toHidden5,toHidden6,toHidden7){
+    toShow.style.display = 'flex';
+    toShow2.style.display = 'flex';
+    toHidden.style.display = 'none';
+    toHidden2.style.display = 'none';
+    toHidden3.style.display = 'none';
+    toHidden4.style.display = 'none';
+    toHidden5.style.display = 'none';
+    toHidden6.style.display = 'none';
+    toHidden7.style.display = 'none';
+}
+
+function clickTopFree(){
+    toggleGames2(topFree1,topFree2,topGames,topNews,topPromotion,pagAll,topAll,topList)
+}
+
+//pag-All-1
+function clickAll(){
+    toggleGames2(topGames,topPromotion,topNews,topFree1,topFree2,topAll,topList)
+}
+
+//pag-All-2
+function clickAll2(){
+    toggleGames2(topNews,topFree2,topFree1,topAll,topList,topGames,topPromotion)
+}
+
+//pag-All-3
+function clickAll3(){
+    toggleGames2(topFree1,topAll,topList,topGames,topNews,topPromotion,topFree2)
+}
+
+//pag-All-4
+function toggleGamesAll3(toShow,toHidden,toHidden2,toHidden3,toHidden4,toHidden5,toHidden6){
+    toShow.style.display = 'grid';
+    toHidden.style.display = 'none';
+    toHidden2.style.display = 'none';
+    toHidden3.style.display = 'none';
+    toHidden4.style.display = 'none';
+    toHidden5.style.display = 'none';
+    toHidden6.style.display = 'none';
+}
+
+function clickAll4(){
+    toggleGamesAll3(topList,topAll,topFree2,topGames,topNews,topPromotion,topFree1)
+}
+/* fim - lista games free | pag-All*/
+
+
+
+
+
+/* começo - lista games all*/
+function toggleGamesAll(toShow,toShow2,toShow3,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
+    toShow.style.display = 'flex';
+    toShow2.style.display = 'flex';
+    toShow3.style.display = 'flex';
     toHidden.style.display = 'none';
     toHidden2.style.display = 'none';
     toHidden3.style.display = 'none';
@@ -142,48 +234,6 @@ function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
     toHidden5.style.display = 'none';
 }
 
-function clickTopGames(){
-    toggleGames(topGames,topNews,topPromotion,topFree1,topFree2,pag1)
+function clickAllGames(){
+    toggleGamesAll(topGames,topPromotion,pagAll,topNews,topFree1,topFree2,topAll,topList)
 }
-
-function clickTopNews(){
-    toggleGames(topNews,topGames,topPromotion,topFree1,topFree2,pag1)
-}
-
-function clickTopPromotion(){
-    toggleGames(topPromotion,topGames,topNews,topFree1,topFree2,pag1)
-}
-
-
-/* lista games free*/
-function toggleGames2(toShow,toShow2,toHidden,toHidden2,toHidden3,toHidden4){
-    toShow.style.display = 'flex';
-    toShow2.style.display = 'flex';
-    toHidden.style.display = 'none';
-    toHidden2.style.display = 'none';
-    toHidden3.style.display = 'none';
-    toHidden4.style.display = 'none';
-}
-
-function clickTopFree(){
-    toggleGames2(topFree1,pag1,topGames,topNews,topPromotion,topFree2)
-}
-
-
-
-/* pag*/
-function toggleGames3(toShow,toHidden){
-    toShow.style.display = 'flex';
-    toHidden.style.display = 'none';  
-}
-
-function clicktopFree1(){
-    toggleGames3(topFree1,topFree2)
-}
-
-function clicktopFree2(){
-    toggleGames3(topFree2,topFree1)
-}
-
-
-
