@@ -80,13 +80,10 @@ header #menu{
     border-radius: 10px;
 }
 
-#menu > a .icon{
+#menu > a .bi{
     font-size: 20px;
 }
 
-#menu > a .txt{
-    font-size: 14px;
-}
 
 /* Fim do header */
 
@@ -278,6 +275,7 @@ main .slider .dots li{
     margin: 20px;
     border-radius: 20px;
     transition: 1s;
+    cursor: pointer;
 }
 
 main .slider .dots li.active{
@@ -394,7 +392,7 @@ main .store .slide-store .name-game p{
 
 main .store .slide-store .name-game .btn{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

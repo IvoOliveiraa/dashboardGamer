@@ -116,29 +116,6 @@ function clickPlay4(){
 
 
 
-/*começo - social*/
-function clickMenu(element){
-    if(element.style.display === 'none'){
-        element.style.display = 'grid'
-    }else{
-        element.style.display ='none'
-    }  
-}
-
-function clickOnline(){
-    clickMenu(online)
-}
-
-function clickOffiline(){
-    clickMenu(offline)
-}
-
-function clickGroup(){
-    clickMenu(group)
-}
-/*fim - social*/
-
-
 
 /*começo - lita do store*/
 function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden5,toHidden6,toHidden7,toHidden8){
