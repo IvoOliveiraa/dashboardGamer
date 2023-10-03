@@ -1,0 +1,132 @@
+@media (max-width: 1581px){
+    main .slider .list .item .btn {
+        left: 638px;
+    }
+
+    main .slider .list .item .lui-mk {
+        margin-right: 389px;
+    }    
+}
+
+@media (max-width: 1216px){
+    main .slider .list .item .btn {
+        left: 417px;
+    }
+
+    main .slider .list .item .lui-mk {
+        margin-right: 815px;
+    }    
+}
+
+
+@media (max-width: 950px){
+    header{
+        margin-bottom: 50px;
+    }
+    
+    header #menu{
+        position: fixed;
+        z-index: 2;
+        background-color: var(--backgroud2);
+    }
+
+    main .store .played{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+
+    main .library .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main .library .cards .card-lib{
+        margin-bottom: 35px;
+    }
+
+    main .slider .list .item .btn {
+        left: 295px;
+    }
+
+    main .slider .list .item .lui-mk {
+        margin-right: 1067px;
+    }
+
+}
+
+
+@media (max-width: 708px){
+    main .store .played{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+    main .library .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main .slider .list .item .btn {
+        left: 184px;
+    }
+
+    main .slider .list .item .lui-mk {
+        margin-right: 1287px;
+    }  
+}
+
+
+@media (max-width: 558px){
+    main .slider .list .item .btn {
+        left: 140px;    
+        bottom: 134px;
+        width: 180px;
+    }
+
+    main .slider .list .item .lui-mk {
+        margin-right: 1425px;
+        width: 316px;
+        bottom: 67px;
+    }
+    main .slider .buttons button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 492px){
+    main .store .played{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    main .library .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+}
+
+
+@media (max-width: 420px){
+    main .slider .list .item .lui-mk {
+        margin-right: 1541px;
+        width: 268px;
+    }  
+
+    main .slider .list .item .btn {
+        left: 106px;
+        bottom: 129px;
+        width: 134px;
+    }
+}
+
+@media (max-width: 335px){
+    main .slider .list .item .lui-mk {
+        margin-right: 1566px;
+        width: 268px;
+    }  
+
+    main .slider .list .item .btn {
+        left: 96px; 
+    }
+}

@@ -40,27 +40,6 @@ header #menu{
     width: 100%;
 }
 
-.hbg {
-    display: none;
-    justify-content: center;
-    padding-top: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.hbg > a{ 
-    color: var(--font);
-    font-size: 30px;
-    background-color: var(--backgroud2);
-    padding: 1px 10px;
-    margin: 0 10px;
-    border-radius: 13px;
-    transition: 0.5s;
-}
-
-.hbg > a:hover{
-    background: var(--hover2);
-}
 
 #menu{
     display: flex;
@@ -69,7 +48,7 @@ header #menu{
 }
 
 #menu >  a{
-    margin: 20px 10px;
+    margin: 10px;
     color: var(--font);
     padding: 7px 10px;
 }
@@ -83,8 +62,6 @@ header #menu{
 #menu > a .bi{
     font-size: 20px;
 }
-
-
 /* Fim do header */
 
 
@@ -124,6 +101,8 @@ main .slider .list .item{
     flex-direction: row;
     position: relative;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 main .slider .list .item .bg-slide{
@@ -136,30 +115,19 @@ main .slider .list .item .bg-slide{
 
 main .slider .list .item .lui-mk{
     position: absolute;
-    width: 417px;
-    bottom: 54px;
-    right: 589px
+    width: 435px;
+    z-index: 1;
 }
 
 main .slider .list .item .logo-slide{
     position: absolute;
-    width: 196px;
-    bottom: 283px;
-    left: 600px; 
+    display: none;
 }
 
-main .slider .list .item .txt-slide{
-    position: absolute;
-    width: 200px;
-    bottom: 310px;
-    left: 604px;
-}
 
 main .slider .list .item .btn{
     position: absolute;
-    width: 196px;
-    bottom: 233px;
-    left: 600px;
+    width: 230px;
     background: var(--hover2);
     padding: 7px 10px;
     color: var(--font);
@@ -169,66 +137,12 @@ main .slider .list .item .btn{
     justify-content: center;
     transition: 0.4s;
     cursor: pointer;
+    z-index: 1;
+    margin-top: 15%;
 }
 
 main .slider .list .item .btn:hover{
     transform: scale(1.05);
-}
-
-
-main .slider .list .item .logo-slide2{
-    position: absolute;
-    width: 196px;
-    bottom: 283px;
-    left: 600px; 
-}
-
-main .slider .list .item .txt-slide2{
-    position: absolute;
-    width: 223px;
-    bottom: 232px;
-    left: 592px;
-}
-
-
-main .slider .list .item .btn2{
-    position: absolute;
-    width: 196px;
-    bottom: 180px;
-    left: 600px;
-    background: var(--hover2);
-    padding: 7px 10px;
-    color: var(--font);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-main .slider .list .item .logo-slide3{
-    position: absolute;
-    width: 248px;
-    bottom: 345px;
-    left: 576px;
-}
-
-
-main .slider .list .item .btn3{
-    position: absolute;
-    width: 196px;
-    bottom: 154px;
-    left: 873px;
-    background: var(--hover2);
-    padding: 7px 10px;
-    color: var(--font);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.4s;
-    cursor: pointer;
 }
 
 
@@ -265,6 +179,7 @@ main .slider .dots{
     padding: 0;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 main .slider .dots li{
@@ -281,7 +196,6 @@ main .slider .dots li{
 main .slider .dots li.active{
     width: 30px;
 }
-
 /* Fim do slide-principal */
 
 
@@ -549,5 +463,4 @@ main .library .card-lib a{
 main .library .card-lib a:hover{
     color: var(--font);
 }
-
 /* Fim do conteudo-library */
