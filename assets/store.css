@@ -1,11 +1,9 @@
-/* Começo  conteudo store */
 main .my-store{
     margin: 30px 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 main .showMore{
@@ -76,13 +74,13 @@ main .my-store .cardsCategory #topList .slide-store{
     margin-bottom: 20px;
 }
 
-main .my-store .cardsCategory #pagAll{
-    margin: 20px 0;
+main .pag{
+    margin: 30px 0;
 }
 
 main .my-store .played{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -232,9 +230,6 @@ main .my-store .pag p:hover{
 main .my-store #topNews,
 #topPromotion, #topFree1,
 #topFree2, #pag1, #pagAll,
-#topAll{
+#pagAll2,#topAll{
     display: none;
 }
-
-
-/* Fim do conteudo-store */

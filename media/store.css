@@ -1,0 +1,30 @@
+@media (max-width: 985px){
+
+    main .my-store .played{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main .my-store .played .slide-store{
+        margin-bottom: 30px;
+    }
+
+    main .my-store .cardsCategory #topList{
+        display: none;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+}
+
+
+@media (max-width: 500px){
+    main .my-store .played{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main .my-store .cardsCategory #topList{
+        display: none;
+        grid-template-columns: 1fr;
+    }
+}

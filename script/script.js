@@ -118,8 +118,8 @@ function clickPlay4(){
 
 
 /*começo - lita do store*/
-function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden5,toHidden6,toHidden7,toHidden8){
-    toShow.style.display = 'flex';
+function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden5,toHidden6,toHidden7,toHidden8,toHidden9){
+    toShow.style.display = 'grid';
     toHidden.style.display = 'none';
     toHidden2.style.display = 'none';
     toHidden3.style.display = 'none';
@@ -127,18 +127,19 @@ function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden5,toHidden6,toH
     toHidden6.style.display = 'none';
     toHidden7.style.display = 'none';
     toHidden8.style.display = 'none';
+    toHidden9.style.display = 'none';
 }
 
 function clickTopGames(){
-    toggleGames(topGames,topNews,topPromotion,topFree1,topFree2,pagAll,topAll,topList)
+    toggleGames(topGames,topNews,topPromotion,topFree1,topFree2,pagAll,pagAll2,topAll,topList)
 }
 
 function clickTopNews(){
-    toggleGames(topNews,topGames,topPromotion,topFree1,topFree2,pagAll,topAll,topList)
+    toggleGames(topNews,topGames,topPromotion,topFree1,topFree2,pagAll,pagAll2,topAll,topList)
 }
 
 function clickTopPromotion(){
-    toggleGames(topPromotion,topGames,topNews,topFree1,topFree2,pagAll,topAll,topList)
+    toggleGames(topPromotion,topGames,topNews,topFree1,topFree2,pagAll,pagAll2,topAll,topList)
 }
 /*fim - lita do store*/
 
@@ -148,9 +149,9 @@ function clickTopPromotion(){
 
 
 /* começo - lista games free | pag-All*/
-function toggleGames2(toShow,toShow2,toHidden,toHidden2,toHidden3,toHidden4,toHidden5,toHidden6,toHidden7){
-    toShow.style.display = 'flex';
-    toShow2.style.display = 'flex';
+function toggleGames2(toShow,toShow2,toHidden,toHidden2,toHidden3,toHidden4,toHidden5,toHidden6,toHidden7,toHidden8){
+    toShow.style.display = 'grid';
+    toShow2.style.display = 'grid';
     toHidden.style.display = 'none';
     toHidden2.style.display = 'none';
     toHidden3.style.display = 'none';
@@ -158,10 +159,11 @@ function toggleGames2(toShow,toShow2,toHidden,toHidden2,toHidden3,toHidden4,toHi
     toHidden5.style.display = 'none';
     toHidden6.style.display = 'none';
     toHidden7.style.display = 'none';
+    toHidden8.style.display = 'none';
 }
 
 function clickTopFree(){
-    toggleGames2(topFree1,topFree2,topGames,topNews,topPromotion,pagAll,topAll,topList)
+    toggleGames2(topFree1,topFree2,topGames,topNews,topPromotion,pagAll,pagAll2,topAll,topList)
 }
 
 //pag-All-1
@@ -200,10 +202,11 @@ function clickAll4(){
 
 
 /* começo - lista games all*/
-function toggleGamesAll(toShow,toShow2,toShow3,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
-    toShow.style.display = 'flex';
-    toShow2.style.display = 'flex';
+function toggleGamesAll(toShow,toShow2,toShow3,toShow4,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
+    toShow.style.display = 'grid';
+    toShow2.style.display = 'grid';
     toShow3.style.display = 'flex';
+    toShow4.style.display = 'flex';
     toHidden.style.display = 'none';
     toHidden2.style.display = 'none';
     toHidden3.style.display = 'none';
@@ -212,5 +215,5 @@ function toggleGamesAll(toShow,toShow2,toShow3,toHidden,toHidden2,toHidden3,toHi
 }
 
 function clickAllGames(){
-    toggleGamesAll(topGames,topPromotion,pagAll,topNews,topFree1,topFree2,topAll,topList)
+    toggleGamesAll(topGames,topPromotion,pagAll,pagAll2,topNews,topFree1,topFree2,topAll,topList)
 }
