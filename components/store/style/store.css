@@ -14,7 +14,6 @@ main .showMore-store{
     flex-direction: column;
 }
 
-
 main .showMore-store .top-show{
     display: flex;
     flex-direction: row;
@@ -39,7 +38,6 @@ main .my-store h1{
     font-size: 20px;
 }
 
-
 main .showMore-store .category{
     display: flex;
     cursor: pointer;
@@ -60,15 +58,12 @@ main .showMore-store .category p:hover{
     transform: scale(1.05);
 }
 
-main .my-store .cardsCategory{
-    width: 100%;
-}
-
 main .my-store .pag{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 30px 0;
 }
 
 main .my-store .pag h4{
@@ -94,20 +89,9 @@ main .my-store .pag p:hover{
     transform: scale(1.05);
 }
 
-main .pag{
-    margin: 30px 0;
+main .my-store .cardsCategory{
+    width: 100%;
 }
-
-
-main .my-store .cardsCategory #topList{
-    display: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-main .my-store .cardsCategory #topList .slide-store{
-    margin-bottom: 20px;
-}
-
 
 main .my-store .played{
     display: grid;
@@ -169,8 +153,8 @@ main .my-store .slide-store .cart{
 main .my-store .slide-store .cart .bi{
     color: var(--font);
     margin: 7px 5px;
+    font-size: 14px
 }
-
 
 main .my-store .slide-store .price{
    display: flex;
@@ -184,6 +168,22 @@ main .my-store .slide-store .price{
 main .my-store .slide-store .price p{
     font-size: 15px;
     font-weight: 600;
+}
+
+main .my-store .slide-store .buy{
+    margin: auto;
+    margin: 20px 0;
+    font-size: 13px;
+    padding: 2px 25px;
+    border-radius: 7px;
+    background: var(--hover2);
+    color: var(--font);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .my-store .slide-store .buy:hover{
+    transform: scale(1.04);
 }
 
 main .my-store .slide-store .desconto{
@@ -203,34 +203,18 @@ main .my-store .slide-store .price .price-desconto{
     font-size: 12px;
 }
 
-main .my-store .slide-store .price i{
-    font-size: 14px;
-}
-
-main .my-store .slide-store .price .bi-heart{
-    margin: 0 10px;
-}
-
-main .my-store .slide-store .buy{
-    margin: auto;
-    margin: 20px 0;
-    font-size: 13px;
-    padding: 2px 25px;
-    border-radius: 7px;
-    background: var(--hover2);
-    color: var(--font);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-main .my-store .slide-store .buy:hover{
-    transform: scale(1.04);
-}
-
-
 main .my-store #topNews,
 #topPromotion, #topFree1,
 #topFree2, #pag1, #pagAll,
 #pagAll2,#topAll{
     display: none;
+}
+
+main .my-store .cardsCategory #topList{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .my-store .cardsCategory #topList .slide-store{
+    margin-bottom: 20px;
 }
