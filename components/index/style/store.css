@@ -1,0 +1,129 @@
+main .store{
+    margin: 30px 0 auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+main .showMore{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+main .showMore a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .showMore a:hover{
+    color: var(--hover);
+}
+ 
+main .showMore a .bi{
+    font-size: 15px;
+}
+
+main .store h1{
+    margin: 30px 0;
+    color: var(--font);
+    font-size: 20px;
+}
+
+main .store .played{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+main .store .slide-store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroud2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 225px;
+    height: 290px;
+    transition: 0.2s;
+    position: relative;
+}
+
+main .store .slide-store:hover{
+    transform: scale(1.04);
+}
+
+main .store .slide-store img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+main .store .slide-store .name-game{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    position: absolute;
+    bottom: 0;
+    padding: 25px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    background: var(--hover2);
+}
+
+main .store .slide-store .name-game:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main .store .slide-store .name-game p{
+    color: var(--font);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main .store .slide-store .name-game .btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .store .slide-store .name-game h3{
+    font-size: 14px;
+    color: var(--font);
+    margin: 3px 20px;
+}
+
+main .store .slide-store .buy{
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 3px 12px;
+    border-radius: 7px;
+    background: var(--backgroud);
+    color: var(--font);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .store .slide-store .buy:hover{
+   color: var(--hover);
+}

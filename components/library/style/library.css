@@ -3,24 +3,22 @@ main{
     height: 100%;
 }
 
-main .showMore{
+main .showMore-lib{
     display: flex;
-    justify-content: left;
+    align-items: center;
+    margin: 50px auto;
+    width: 85%;
 }
 
-main .showMore a{
-    margin: 0 10px;
+main .showMore-lib a{
+    font-size: 30px;
+    color: var(--font);
 }
 
-main .showMore a .bi{
+main .showMore-lib h1{
     font-size: 20px;
-}
-
-.play{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100%;
-    height: 100%;
+    color: var(--font);
+    margin-left: 10px;
 }
 
 .pag{
@@ -54,23 +52,12 @@ main .showMore a .bi{
     transform: scale(1.05);
 }
 
-.category{
-    margin-bottom: 10px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-}
 
-.category a{
-    margin: 0 10px;
-    font-size: 20px;
-    border-radius: 7px;
-    color: var(--font);
-    transition: 0.5s;
-}
-
-.category a:hover{
-    color: var(--hover);
+.play{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
 }
 
 .mygames{
@@ -141,4 +128,3 @@ main .showMore a .bi{
 #play2, #play3, #play4{
     display: none;
 }
-    

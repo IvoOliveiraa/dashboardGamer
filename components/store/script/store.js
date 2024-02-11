@@ -1,122 +1,3 @@
-//começo - parte da fetch (API)
-document.addEventListener('click', async (e) => {
-    const el = e.target;
-    const tag = el.tagName.toLowerCase();
-
-    if (tag === 'a') {
-        e.preventDefault();
-        await carregaPagina(el);
-    }
-});
-
-async function carregaPagina(el) {
-    try {
-        const href = el.getAttribute('href');
-        const response = await fetch(href);
-
-        if (response.status !== 200) {
-            throw new Error('Erro na requisição: ' + response.status);
-        }
-
-        const contentType = response.headers.get('content-type');
-        if (!contentType || !contentType.includes('text/html')) {
-            throw new Error('A resposta não é uma página HTML válida.');
-        }
-
-        const html = await response.text();
-        carregaResultado(html);
-    } catch (e) {
-        console.error('Erro ao carregar a página:', e);
-    }
-}
-
-function carregaResultado(response) {
-    const resultado = document.querySelector('body');
-    resultado.innerHTML = response;
-}
-//começo - parte da fetch (API)
-
-
-
-/*começo - slide principal*/
-let list = document.querySelector('.list');
-let items = document.querySelectorAll('.item');
-let dots = document.querySelectorAll('.dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-
-let active = 0;
-let lengthItems = items.length - 1;
-
-next.onclick = function(){
-    if(active + 1 > lengthItems){
-        active = 0;
-    }else{
-        active = active + 1;
-    }
-    reloadSlider();
-}
-
-prev.onclick = function(){
-    if(active - 1 < 0){
-        active = lengthItems;
-    }else{
-        active = active - 1;
-    }
-    reloadSlider();
-}
-
-let refreshSlider = setInterval(()=> {next.click()}, 5000);
-
-function reloadSlider(){
-    let checkLeft = items[active].offsetLeft;
-    list.style.left = -checkLeft + 'px';
-
-    let lastActiveDot = document.querySelector('.slider .dots li.active');
-    lastActiveDot.classList.remove('active');
-    dots[active].classList.add('active');
-    clearInterval(refreshSlider);
-    refreshSlider = setInterval(()=> {next.click()}, 5000);
-}
-dots.forEach((li, key) =>{
-    li.addEventListener('click', function(){
-        active = key;
-        reloadSlider();
-    })
-})
-/*fim - slide principal*/  
-
-
-
-/*começo - lista games*/
-function toggleMenu(toHidden,toHidde2,toHidde3,toShow){
-    toHidden.style.display = 'none';
-    toHidde2.style.display = 'none';
-    toHidde3.style.display = 'none';
-    toShow.style.display = 'grid';
-}
-
-function clickPlay1(){
-    toggleMenu(play2,play3,play4,play1)
-}   
-
-function clickPlay2(){
-    toggleMenu(play1,play3,play4,play2)
-}
-
-function clickPlay3(){
-    toggleMenu(play1,play2,play4,play3)
-}
-
-function clickPlay4(){
-    toggleMenu(play1,play2,play3,play4)
-}
-/*fim - lista games*/
-
-
-
-
-
 /*começo - lita do store*/
 function toggleGames(toShow,toHidden,toHidden2,toHidden3,toHidden5,toHidden6,toHidden7,toHidden8,toHidden9){
     toShow.style.display = 'grid';
@@ -142,6 +23,7 @@ function clickTopPromotion(){
     toggleGames(topPromotion,topGames,topNews,topFree1,topFree2,pagAll,pagAll2,topAll,topList)
 }
 /*fim - lita do store*/
+
 
 
 
@@ -200,7 +82,6 @@ function clickAll4(){
 
 
 
-
 /* começo - lista games all*/
 function toggleGamesAll(toShow,toShow2,toShow3,toShow4,toHidden,toHidden2,toHidden3,toHidden4,toHidden5){
     toShow.style.display = 'grid';
@@ -217,3 +98,4 @@ function toggleGamesAll(toShow,toShow2,toShow3,toShow4,toHidden,toHidden2,toHidd
 function clickAllGames(){
     toggleGamesAll(topGames,topPromotion,pagAll,pagAll2,topNews,topFree1,topFree2,topAll,topList)
 }
+/* fim - lista games all*/

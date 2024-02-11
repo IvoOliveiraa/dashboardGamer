@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--backgroud2);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+header #menu{
+    width: 100%;
+}
+
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu >  a{
+    margin: 10px;
+    color: var(--font);
+    padding: 7px 10px;
+}
+
+
+#menu > a:hover{
+    background: var(--hover2);
+    border-radius: 10px;
+}
+
+#menu > a .bi{
+    font-size: 20px;
+}

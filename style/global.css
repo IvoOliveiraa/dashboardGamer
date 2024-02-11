@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --backgroud: #1a1b1f;
+    --backgroud2: #25262d;
+    --hover: rgb(50,98,180);
+    --font: white;
+    --hover2: radial-gradient(circle,rgb(50,98,180) 0%,rgb(17,53,139) 100%);
+}
+
+body{
+    background-color: var(--backgroud);
+    margin: auto;
+    overflow-x: hidden;
+}

@@ -1,0 +1,104 @@
+main{
+    margin: auto;
+    width: 100%;
+    
+}
+
+main .principal {
+    background-color: red;
+}
+
+main .slider{
+    
+    max-width: 1900px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .slider .list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+main .slider .list .item{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main .slider .list .item .bg-slide{
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+}
+
+main .slider .list .item .bg-slide2{
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+}
+
+
+main .slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--hover2);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .slider .buttons button:hover{
+    transform: scale(1.05);
+}
+
+main .slider .dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+main .slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background: var(--hover2);
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+main .slider .dots li.active{
+    width: 30px;
+}

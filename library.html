@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Gamer</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/library.css">
-    <link rel="stylesheet" href="media/library.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="components/library/style/header.css">
+    <link rel="stylesheet" href="components/library/style/library.css">
+    <link rel="stylesheet" href="components/library/media/library.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
-        <div class="hbg">
-            <a onclick="clickMenu()"><i class="bi bi-list"></i></a>
-        </div>
-
         <nav id="menu">
             <a href="index.html">Home</a>
 
@@ -27,8 +24,8 @@
 
     <main>
         <section class="library">
-            <span class="showMore">
-                <a href="index.html" class="before" ><i class="bi bi-chevron-left"></i></a>
+            <span class="showMore-lib">
+                <a href="index.html" class="before" ><</a>
                 <h1>My library</h1>
             </span>
 
@@ -43,7 +40,7 @@
 
             <div class="play" id="play1">
                 <div class="mygames">
-                    <img src="img/gta.jpg" alt="imagem do jogo gta 5">
+                    <img src="components/img-cards/gta.jpg" alt="imagem do jogo gta 5">
                     <h3>Grand theft auto v</h3>
                     <h5>action</h5>
                     <div class="btn">                             
@@ -52,7 +49,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/lol.jpg" alt="imagem do lol">
+                    <img src="components/img-cards/lol.jpg" alt="imagem do lol">
                     <h3>League of legends</h3>
                     <h5>strategy</h5>
                     <div class="btn">
@@ -61,7 +58,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/valorant-bg.webp" alt="imagem do jogo valorant">
+                    <img src="components/img-cards/valorant-bg.webp" alt="imagem do jogo valorant">
                     <h3>Valorant</h3>
                     <h5>action</h5>
                     <div class="btn">
@@ -71,7 +68,7 @@
 
                 
                 <div class="mygames">
-                    <img src="img/tft.jpg" alt="imagem do jogo tft">
+                    <img src="components/img-cards/tft.jpg" alt="imagem do jogo tft">
                     <h3>Teamfight tactics</h3>
                     <h5>strategy</h5>
                     <div class="btn">
@@ -80,7 +77,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/rune.jpg" alt="imagem do jogo league of runeterra">
+                    <img src="components/img-cards/rune.jpg" alt="imagem do jogo league of runeterra">
                     <h3>League of runeterra</h3>
                     <h5>strategy</h5>
                     <div class="btn">
@@ -90,7 +87,7 @@
 
                 
                 <div class="mygames">
-                    <img src="img/mk1.webp" alt="imagem do jogo mk 1">
+                    <img src="components/img-cards/mk1.webp" alt="imagem do jogo mk 1">
                     <h3>Mortal kombat 1</h3>
                     <h5>fight</h5>
                     <div class="btn">
@@ -99,7 +96,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/mkx.jpg" alt="imagem do jogo mk X">
+                    <img src="components/img-cards/mkx.jpg" alt="imagem do jogo mk X">
                     <h3>Mortak kombat X</h3>
                     <h5>fight</h5>
                     <div class="btn">                             
@@ -108,7 +105,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/mkxl.jpeg" alt="imagem do jogo mk XL">
+                    <img src="components/img-cards/mkxl.jpeg" alt="imagem do jogo mk XL">
                     <h3>Mortal kombat XL</h3>
                     <h5>fight</h5>
                     <div class="btn">
@@ -121,7 +118,7 @@
             <div class="play" id="play2">
                 
                 <div class="mygames">
-                    <img src="img/cs2.webp" alt="imagem do jogo cs2">
+                    <img src="components/img-cards/cs2.webp" alt="imagem do jogo cs2">
                     <h3>Counter strike 2</h3>
                     <h5>action</h5>
                     <div class="btn">
@@ -130,7 +127,7 @@
                 </div>
                 
                 <div class="mygames">
-                    <img src="img/cyb.jpg" alt="imagem do jogo cyberpunk">
+                    <img src="components/img-cards/cyb.jpg" alt="imagem do jogo cyberpunk">
                     <h3>Cyberpunk 2077</h3>
                     <h5>action</h5>
                     <div class="btn">
@@ -139,7 +136,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/apex.webp" alt="imagem do jogo apex">
+                    <img src="components/img-cards/apex.webp" alt="imagem do jogo apex">
                     <h3>Apex legends</h3>
                     <h5>action</h5>
                     <div class="btn">
@@ -148,7 +145,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/hl.jpg" alt="imagem do jogo hogwarts legacy">
+                    <img src="components/img-cards/hl.jpg" alt="imagem do jogo hogwarts legacy">
                     <h3>Hogwarts Legacy</h3>
                     <h5>RPG Action</h5>
                     <div class="btn">
@@ -157,7 +154,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/Among.jpg" alt="imagem do jogo among-us">
+                    <img src="components/img-cards/Among.jpg" alt="imagem do jogo among-us">
                     <h3>Among-us</h3>
                     <h5>strategy</h5>
                     <div class="btn">                             
@@ -166,7 +163,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/street.png" alt="imagem do jogo street fighter 6">
+                    <img src="components/img-cards/street.png" alt="imagem do jogo street fighter 6">
                     <h3>Street Fighter 6</h3>
                     <h5>fight</h5>
                     <div class="btn">
@@ -175,7 +172,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/nba2k23.jpg" alt="imagem do jogo NBA 2k23">
+                    <img src="components/img-cards/nba2k23.jpg" alt="imagem do jogo NBA 2k23">
                     <h3>NBA 2k23</h3>
                     <h5>sport</h5>
                     <div class="btn">
@@ -184,7 +181,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/steet5.jpg" alt="imagem do jogo street fighter 5">
+                    <img src="components/img-cards/steet5.jpg" alt="imagem do jogo street fighter 5">
                     <h3>Street Fighter 5</h3>
                     <h5>fight</h5>
                     <div class="btn">
@@ -196,7 +193,7 @@
 
             <div class="play" id="play3">
                 <div class="mygames">
-                    <img src="img/starfield.png" alt="imagem do jogo starfield">
+                    <img src="components/img-cards/starfield.png" alt="imagem do jogo starfield">
                     <h3>Starfield</h3>
                     <h5>adventure / action</h5>
                     <div class="btn">
@@ -205,7 +202,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/Lies.jpg" alt="imagem do jogo lies of p">
+                    <img src="components/img-cards/Lies.jpg" alt="imagem do jogo lies of p">
                     <h3>Lies of P</h3>
                     <h5>RPG</h5>
                     <div class="btn">
@@ -214,7 +211,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/fnt.webp" alt="imagem do jogo fortnite">
+                    <img src="components/img-cards/fnt.webp" alt="imagem do jogo fortnite">
                     <h3>Fortnite</h3>
                     <h5>action</h5>
                     <div class="btn">
@@ -223,7 +220,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/overw.jpg" alt="imagem do jogo overwatch 2">
+                    <img src="components/img-cards/overw.jpg" alt="imagem do jogo overwatch 2">
                     <h3>Overwatch 2</h3>
                     <h5>action</h5>
                     <div class="btn">
@@ -232,7 +229,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/rocket-league.webp" alt="imagem do jogo rocket league">
+                    <img src="components/img-cards/rocket-league.webp" alt="imagem do jogo rocket league">
                     <h3>Rocket league</h3>
                     <h5>sport</h5>
                     <div class="btn">
@@ -241,7 +238,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/lostArk.webp" alt="imagem do jogo lost ark">
+                    <img src="components/img-cards/lostArk.webp" alt="imagem do jogo lost ark">
                     <h3>Lost ark</h3>
                     <h5>MMORPG</h5>
                     <div class="btn">
@@ -250,7 +247,7 @@
                 </div>  
 
                 <div class="mygames">
-                    <img src="img/thesims.jpg" alt="imagem do jogo the sims 4">
+                    <img src="components/img-cards/thesims.jpg" alt="imagem do jogo the sims 4">
                     <h3>The sims 4</h3>
                     <h5>life simulator</h5>
                     <div class="btn">
@@ -259,7 +256,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/pubg.jpg" alt="imagem do jogo PUBG - Battlegrounds">
+                    <img src="components/img-cards/pubg.jpg" alt="imagem do jogo PUBG - Battlegrounds">
                     <h3>PUBG - Battlegrounds</h3>
                     <h5>battle royale</h5>
                     <div class="btn">
@@ -271,7 +268,7 @@
 
             <div class="play" id="play4">
                 <div class="mygames">
-                    <img src="img/gtaSan.jpg" alt="imagem do jogo grand theft auto san andreas">
+                    <img src="components/img-cards/gtaSan.jpg" alt="imagem do jogo grand theft auto san andreas">
                     <h3>GTA: San Andreas</h3>
                     <h5>The Definitive Edition</h5>
                     <div class="btn">
@@ -280,7 +277,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/fc24.jpeg" alt="imagem do jogo fc24">
+                    <img src="components/img-cards/fc24.jpeg" alt="imagem do jogo fc24">
                     <h3>EA SPORTS FC™ 24</h3>
                     <h5>sport</h5>
                     <div class="btn">
@@ -289,7 +286,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/seaOfThieves.jpg" alt="imagem do jogo Sea of Thieves 2023 Edition">
+                    <img src="components/img-cards/seaOfThieves.jpg" alt="imagem do jogo Sea of Thieves 2023 Edition">
                     <h3>Sea of Thieves</h3>
                     <h5>2023 Edition</h5>
                     <div class="btn">
@@ -298,7 +295,7 @@
                 </div>
 
                 <div class="mygames">
-                    <img src="img/tw.jpeg" alt="imagem do jogo the witcher 3">
+                    <img src="components/img-cards/tw.jpeg" alt="imagem do jogo the witcher 3">
                     <h3>The Witcher® 3</h3>
                     <h5>Wild Hunt</h5>
                     <div class="btn">
@@ -318,6 +315,9 @@
         </section>
 
     </main>
-    <script src="script/script.js"></script>
+
+    <script src="components/index/script/index.js"></script>
+    <script src="components/library/script/library.js"></script>
+    <script src="components/store/script/store.js"></script>
 </body>
 </html>

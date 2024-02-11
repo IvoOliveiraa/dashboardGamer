@@ -1,0 +1,125 @@
+main .library {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+main .library .showMore{
+    width: 80%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+main .library .showMore h1{
+    font-size: 20px;
+    color: var(--font);
+}
+
+main .library .cards{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .library .games{
+    background-color: var(--backgroud2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+}
+
+main .library .games span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+main .library .games span h3{
+    font-size: 16px;
+    color: var(--font);
+}
+
+main .library .games span a{
+    font-size: 13px;
+    color: var(--hover);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+
+main .library .games span .more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .library .games span a:hover{
+    color:var(--font);
+}
+
+main .library .games span .more i{
+    font-size: 22px;
+    color: var(--hover);
+}
+
+main .library .card-lib{
+    width: 230px;
+    border-radius: 20px;
+    background-color: var(--backgroud2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.171);
+    margin: auto;
+    transition: 0.2s;
+}
+
+main .library .card-lib:hover{
+    transform: scale(1.04);
+}
+
+main .library .card-lib img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  
+}
+main .library .card-lib h3{
+    font-size: 17px;
+    margin: 3px 20px;
+    color: var(--font);
+    
+}
+
+main .library .card-lib h5{
+    font-size: 10px;
+    margin: 3px 20px;
+    color: var(--font);
+}
+
+main .library .card-lib .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 3px;
+}
+
+
+main .library .card-lib a{
+    background-color: var(--backgroud2);
+    border: 1px solid var(--hover);
+    color: var(--hover);
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+main .library .card-lib a:hover{
+    color: var(--font);
+}
